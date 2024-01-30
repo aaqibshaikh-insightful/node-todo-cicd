@@ -1,10 +1,10 @@
 pipeline {
-    agent {label 'Slave1'}
+    agent any 
     
     stages{
         stage("Code"){
             steps{
-                git url: "https://github.com/LondheShubham153/node-todo-cicd.git", branch: "master"
+                git url: "https://github.com/aaqibshaikh-insightful/node-todo-cicd.git", branch: "master"
             }
         }
         stage("Build & Test"){
@@ -28,3 +28,4 @@ pipeline {
         }
     }
 }
+
