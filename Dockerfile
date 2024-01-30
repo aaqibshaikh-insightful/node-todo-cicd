@@ -4,4 +4,4 @@ COPY . .
 RUN npm install
 RUN npm run test
 EXPOSE 8001
-CMD ["node","app.js","0.0.0.0:8000"]
+CMD ["node","app.js","0.0.0.0:8001"]
